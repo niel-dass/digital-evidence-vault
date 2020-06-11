@@ -1,0 +1,1 @@
+Any test written in Node JS is put into this folder.
