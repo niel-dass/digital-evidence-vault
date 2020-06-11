@@ -1,0 +1,1 @@
+Files that are part of the frontend development are put into this folder.
