@@ -1,0 +1,37 @@
+<html>
+
+	<head>
+		<title>Devault</title>
+		<script src="./bower_components/crypto-js/crypto-js.js"></script>
+		<script src="web3.js"></script>
+		<script src="bundle.js"></script>
+	</head>
+
+	<body>
+		<h1 style="font-family:'Courier New'; color: green; text-align:center">DEVAULT</h1>
+
+		<h2 style="font-family:'Courier New';"><u>Submit case evidence:</u></h2>
+
+		<form id="submitEvidence">
+			<label for="casesID">Case ID:</label> <br>
+			<input id="caseID"></input><br><br>
+			<label for="caseEvidence">Upload Digital Evidence:</label> <br>
+			<input type="file" id="caseEvidence"></input><br>
+			<br>
+			<button type="submit">Submit</button>
+		</form>
+		<p id="submitMsg"></p>
+		
+		<h2 style="font-family:'Courier New';"><u>Verify integrity of evidence: </u></h2>
+		<form id="verifyEvidence">
+			<label for="casesID">Case ID:</label> <br>
+			<input id="caseID"></input><br><br>
+			<label for="caseEvidence">Upload Digital Evidence:</label> <br>
+			<input type="file" id="caseEvidence"></input><br>
+			<br>
+			<button type="submit">Verify</button>
+		</form>
+		<p id="verificationMsg"></p>
+	</body>
+
+</html>
