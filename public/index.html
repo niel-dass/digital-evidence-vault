@@ -1,0 +1,79 @@
+<html>
+
+	<head>
+		<title>Devault</title>
+		<script src="./bower_components/crypto-js/crypto-js.js"></script>
+		<script src="web3.js"></script>
+		<script src="bundle.js"></script>
+	</head>
+	
+	<style>
+		body{
+			background-image: url(images/binary.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+		#main{
+			background-color: black;
+			color: white;
+			width: 70%;
+			margin: auto;
+			padding: 30px;
+		}
+	</style>
+
+	<body>
+		<h1 style="font-family:'Courier New'; color: green; text-align:center">DEVAULT</h1>
+		
+		<div id="main">
+
+			<h2 style="font-family:'Courier New';"><u>Submit case evidence:</u></h2>
+
+			<form id="submitEvidence">
+				<label for="casesID">Case ID:</label> <br>
+				<input id="caseID"></input><br><br>
+				<label for="caseEvidence">Upload Digital Evidence:</label> <br>
+				<input type="file" id="caseEvidence"></input><br>
+				<br>
+				<button type="submit">Submit</button>
+			</form>
+			<p id="submitMsg"></p>
+			
+			<h2 style="font-family:'Courier New';"><u>Verify integrity of evidence: </u></h2>
+			<form id="verifyEvidence">
+				<label for="casesID">Case ID:</label> <br>
+				<input id="caseID"></input><br><br>
+				<label for="caseEvidence">Upload Digital Evidence:</label> <br>
+				<input type="file" id="caseEvidence"></input><br>
+				<br>
+				<button type="submit">Verify</button>
+			</form>
+			<p id="verificationMsg"></p>
+			<br><br>
+			<h3 style="font-family:'Courier New';">About</h3>
+			<p>The Devault browser application allows you to secure digital evidence during a crime investigation. It does this by storing the hash of a file on the ethereum blockchain through a smart contract. Once the hash has been saved, it cannot be altered. This is because the decentralized nature of blockchain technology stores the data on thousands of computers around the world, which are all processing transaction blocks using crytography. Such a system creates an effective way to detect evidence tampering since an intruder who attempts to change a file cannot change the original hash without an immense amount of computing power.</p>
+			<br>
+			<h3 style="font-family:'Courier New';">Instructions</h3>
+			<ol>
+				<li>To create a case, go to the "Submit case evidence" section.</li>
+				<li>Enter the case ID.</li>
+				<li>Upload the file containing all the evidence for that case.</li>
+				<li>Make sure that all the data you entered is correct because you can submit a file only once for that ID.</li>
+				<li>When you are ready to proceed, click "Submit"</li>
+				<li>To verify a file go to the "Verify integrity of evidence" section.</li>
+				<li>Enter the ID of the case you are investigating.</li>
+				<li>Upload the file containing the evidence for that case.</li>
+				<li>Click "Verify"</li>
+				<li>A messaage will pop up at the bottom indicating whether the file has been tampered with.</li>
+			</ol>
+			<br>
+			<h3 style="font-family:'Courier New';">Disclaimer</h3>
+			<p>This application is still in its Beta stage and may be susceptible to XSS attacks. Because of this, I DO NOT reccomend using this for official use. I will not be responsible for anything that happens as a result of using this app.</p>
+			<br>
+			<p>Created by Niel</p>
+			<br>
+		</div>
+	</body>
+
+</html>
