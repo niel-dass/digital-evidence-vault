@@ -1,1 +1,3 @@
+This test folder is created by default when you initialize a Truffle projet.
 Any test written in Node JS is put into this folder.
+The smart contract already works with the frontend, so there is no need for testing.
